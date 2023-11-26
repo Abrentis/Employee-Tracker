@@ -274,12 +274,12 @@ const updateRole = () => {
                     return;
                 }
                 const selectedRole = roleChoices.find(
-                    (role) => role.value === answers.employeeRole
+                    (role) => role.value === answers.roleSelect
                 );
                 const selectedEmployee = employeeChoices.find(
-                    (employee) => employee.value === answers.employeeChoices
+                    (employee) => employee.value === answers.employeeSelect
                 );
-                console.log(`${selectedEmployee}'s role has been updated to ${selectedRole}!`);
+                console.log(`${selectedEmployee.name}'s role has been updated to ${selectedRole.name}!`);
             })
             viewEmployees();
         })
